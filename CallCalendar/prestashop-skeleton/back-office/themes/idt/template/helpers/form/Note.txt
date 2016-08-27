@@ -1,0 +1,46 @@
+Make sure that form.tpl in this folder contains entries for partner_contact and partner_logo_file types used in the 
+AdminPartnersController within the fields_form array. If they are not in the form.tpl, add these entries somewhere along the long list of "{elseif $input.type ==something...} ":
+
+{elseif $input.type == 'partner_logo_file'}
+									{if isset($input.display_image) && $input.display_image}
+										{if isset($fields_value.image) && $fields_value.image}
+											<div id="partner_image">
+												{$fields_value.image}
+												<p align="center">{l s='File size'} {$fields_value.size}kb</p>
+												<a href="{$current}&{$identifier}={$form_id}&token={$token}&deleteImage=1">
+													<img src="../img/admin/delete.gif" alt="{l s='Delete'}" /> {l s='Delete'}
+												</a>
+											</div><br />
+										{/if}
+									{/if}
+									<input type="file" name="{$input.name}" {if isset($input.id)}id="{$input.id}"{/if} />
+									{if !empty($input.hint)}<span class="hint" name="help_box">{$input.hint}<span class="hint-pointer">&nbsp;</span></span>{/if}
+{elseif $input.type == 'partner_contact'}
+									{assign var=id_partner value=$input.id_partner}
+									{assign var=contacts value=$input.contacts}
+									{include file='helpers/form/form_partner_contact.tpl'}
+
+Make sure that form.tpl in this folder contains entries for news_contact, event_speaker and file_uploading types used in the 
+AdminEventsController and AdminNewsController within the fields_form array. If they are not in the form.tpl, add these entries somewhere along the long list of "{elseif $input.type ==something...} ":
+
+								
+								{elseif $input.type == 'news_contact'}
+									{assign var=id_contact value=$input.value}
+									{assign var=contact_name value=$input.contact_name}
+									{include file='helpers/form/form_news_contact.tpl'}
+								{elseif $input.type == 'event_speakers'}
+									{assign var=speakers value=$input.value}
+									{assign var=id_news_and_event value=$input.news_and_event}
+									{include file='helpers/form/form_event_speaker.tpl'}			
+
+
+								{elseif $input.type == 'file_uploading'}
+								{if isset($input.file_path) && $input.file_path}
+											<div id="news_and_events_file_link">
+												<a href="{$input.file_path}" target="_blank">
+													<img src="../img/file_icon.png" alt="{l s='Open'}" /> {l s='Open'}
+												</a>
+											</div><br />
+										{/if}
+								<input type="file" name="{$input.name}" {if isset($input.id)}id="{$input.id}"{/if} />
+								{if !empty($input.hint)}<span class="hint" name="help_box">{$input.hint}<span class="hint-pointer">&nbsp;</span></span>{/if}					

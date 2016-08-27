@@ -1,0 +1,145 @@
+<?php /* Smarty version Smarty-3.1.8, created on 2013-03-25 15:57:07
+         compiled from "/www/htdocs/mrtc/testIDT/adm/themes/idt/template/controllers/projects/helpers/view/view.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:700617587515065c3446935-61432597%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'a4a28927c04360601339d214ec9fb5757de37c4d' => 
+    array (
+      0 => '/www/htdocs/mrtc/testIDT/adm/themes/idt/template/controllers/projects/helpers/view/view.tpl',
+      1 => 1349711825,
+      2 => 'file',
+    ),
+    '4ca0a9f9dd6051b06d916c669924873bfa94bf41' => 
+    array (
+      0 => '/www/htdocs/mrtc/testIDT/adm/themes/idt/template/helpers/view/view.tpl',
+      1 => 1348647540,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '700617587515065c3446935-61432597',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'show_toolbar' => 0,
+    'toolbar_btn' => 0,
+    'toolbar_scroll' => 0,
+    'title' => 0,
+    'name_controller' => 0,
+    'hookName' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_515065c37b7ef1_07376242',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_515065c37b7ef1_07376242')) {function content_515065c37b7ef1_07376242($_smarty_tpl) {?>
+
+<?php if ($_smarty_tpl->tpl_vars['show_toolbar']->value){?>
+	<?php echo $_smarty_tpl->getSubTemplate ("toolbar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('toolbar_btn'=>$_smarty_tpl->tpl_vars['toolbar_btn']->value,'toolbar_scroll'=>$_smarty_tpl->tpl_vars['toolbar_scroll']->value,'title'=>$_smarty_tpl->tpl_vars['title']->value), 0);?>
+
+<?php }?>
+
+<div class="leadin"></div>
+
+
+
+	<fieldset>
+		<ul>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Name:'),$_smarty_tpl);?>
+</span> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['name'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Type:'),$_smarty_tpl);?>
+</span><br> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['type'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Acronym:'),$_smarty_tpl);?>
+</span> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['acronym'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Status:'),$_smarty_tpl);?>
+</span><br> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['status'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Registry number:'),$_smarty_tpl);?>
+</span><br> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['registry_number'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'URL:'),$_smarty_tpl);?>
+</span><br> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['url'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Start date:'),$_smarty_tpl);?>
+</span><br> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['date_start'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'End date:'),$_smarty_tpl);?>
+</span><br> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['date_end'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Keywords:'),$_smarty_tpl);?>
+</span> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['keywords'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Partners:'),$_smarty_tpl);?>
+</span> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['partners'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Overview:'),$_smarty_tpl);?>
+</span> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['overview'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Results:'),$_smarty_tpl);?>
+</span> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['results'];?>
+</li>
+			<br>
+			<li><span style="font-weight: bold; font-size: 13px; color:#000;"><?php echo smartyTranslate(array('s'=>'Future work:'),$_smarty_tpl);?>
+</span> <?php echo $_smarty_tpl->tpl_vars['project']->value[0]['future_work'];?>
+</li>
+		</ul>
+	</fieldset>
+
+	<div class="separation"></div>
+	<h2><?php echo smartyTranslate(array('s'=>'Funding agencies related to this project'),$_smarty_tpl);?>
+</h2>
+	<?php echo $_smarty_tpl->tpl_vars['fundingAgenciesList']->value;?>
+
+		<div class="separation"></div>
+	<h2><?php echo smartyTranslate(array('s'=>'Initiatives related to this project'),$_smarty_tpl);?>
+</h2>
+	<?php echo $_smarty_tpl->tpl_vars['initiativesList']->value;?>
+
+		<div class="separation"></div>
+	<h2><?php echo smartyTranslate(array('s'=>'Partners related to this project'),$_smarty_tpl);?>
+</h2>
+	<?php echo $_smarty_tpl->tpl_vars['partnerList']->value;?>
+
+
+
+
+<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayAdminView'),$_smarty_tpl);?>
+
+<?php if (isset($_smarty_tpl->tpl_vars['name_controller']->value)){?>
+	<?php $_smarty_tpl->_capture_stack[0][] = array('hookName', 'hookName', null); ob_start(); ?>display<?php echo ucfirst($_smarty_tpl->tpl_vars['name_controller']->value);?>
+View<?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
+if (!empty($_capture_buffer)) {
+ if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
+ if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
+ Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
+} else $_smarty_tpl->capture_error();?>
+	<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>$_smarty_tpl->tpl_vars['hookName']->value),$_smarty_tpl);?>
+
+<?php }elseif(isset($_GET['controller'])){?>
+	<?php $_smarty_tpl->_capture_stack[0][] = array('hookName', 'hookName', null); ob_start(); ?>display<?php echo htmlentities(ucfirst($_GET['controller']));?>
+View<?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
+if (!empty($_capture_buffer)) {
+ if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
+ if (isset( $_capture_append)) $_smarty_tpl->append( $_capture_append, ob_get_contents());
+ Smarty::$_smarty_vars['capture'][$_capture_buffer]=ob_get_clean();
+} else $_smarty_tpl->capture_error();?>
+	<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>$_smarty_tpl->tpl_vars['hookName']->value),$_smarty_tpl);?>
+
+<?php }?>
+<?php }} ?>

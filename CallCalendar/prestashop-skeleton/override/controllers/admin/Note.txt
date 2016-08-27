@@ -1,0 +1,38 @@
+To add support for adding partners to projects in AdminProjectsController add following lines:
+
+	$partners = Partner::getPartners($this->context->language->id);
+	$partner_types=PartnerType::getPartnerTypes($this->context->language->id);
+		
+before this line:
+
+$this->fields_form = array(...
+
+and this in fields_form array amongst other fields:
+
+array(
+					'type' => 'partner',
+					'label' => $this->l('Related Partners:'),
+					'name' => 'partnerBox',
+					'values' => $partners,
+					'partner_types'=>$partner_types,
+					'required' => false,
+					'desc' => $this->l('Select the partner(s) this project is related to')
+				),
+
+
+then before line:
+
+		$this->fields_form['submit'] = array(
+
+add the following code:
+
+		$related_partners = $project->getProjectRelatedPartners();
+		$related_partners_ids = array();
+if (is_array($related_partners))
+			foreach ($related_partners as $related_partner)
+				$related_partners_ids[] = $related_partner['id_partner'];
+				
+		if (is_array($partners))
+		foreach ($partners as $partner)
+			$this->fields_value['partnerBox_'.$partner['id_partner']] = 
+				Tools::getValue('partnerBox_'.$partner['id_partner'], in_array($partner['id_partner'], $related_partners_ids));

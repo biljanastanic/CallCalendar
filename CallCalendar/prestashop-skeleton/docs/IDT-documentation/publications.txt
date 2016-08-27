@@ -1,0 +1,82 @@
+Publication type:
+article
+review
+bookReview
+book
+doctoralThesis
+chapter
+conferencePaper
+licenciateThesis
+manuscript
+patent
+conferenceProceedings
+report
+collection
+studentThesis
+other
+
+
+- Article in journal
+- Article, book review
+- Article, review/survey
+	@article{Pettersson469508,
+		institution = {Mälardalen University, School of Innovation, Design and Engineering},
+		journal = {Journal of Visual Literacy},
+	}
+- Conference proceedings
+	@proceedings{293323,
+		institution = {Mälardalen University, School of Education, Culture and Communication},
+		series = {Reports from the Centre for Finnish Studies},
+	}
+- Doctoral thesis
+	@phdthesis{Abelli120717,
+		institution = {Mälardalen University, School of Business},
+		school = {Mälardalen University, School of Business},
+		series = {Mälardalen University Press Dissertations},
+	}
+- Licentiate thesis
+	@misc{Akan507974,
+		institution = {Mälardalen University, School of Innovation, Design and Engineering},
+		school = {Mälardalen University, School of Innovation, Design and Engineering},
+		series = {Mälardalen University Press Licentiate Theses},
+	}
+- Book
+	@book{Aytar293211,
+		institution = {Mälardalen University, School of Health, Care and Social Welfare},
+	}
+- Chapter in book
+	@incollection{Ahmed579632,
+		booktitle = {Lecture Notes in Computer Science, vol. 7466},
+		institution = {Mälardalen University, School of Innovation, Design and Engineering},
+		series = {Lecture Notes in Computer Science},
+	}
+- Manuscript (preprint)
+	@unpublished{Almqvist571786,
+		institution = {Mälardalen University, School of Health, Care and Social Welfare},
+		institution = {Sociologiska institutionen, Umeå universitet},
+	}
+- Other (pupular science, discussion, etc.)
+	@misc{Brunnberg408477,
+		institution = {Mälardalen University, School of Health, Care and Social Welfare},
+	}
+- Collection/Anthology
+	@misc{460095,
+		institution = {Mälardalen University, School of Education, Culture and Communication},
+	}
+- Patent
+	@misc{Porathe115501,
+		institution = {Mälardalen University, Department of Innovation, Design and Product Development},
+		institution = {Informationsdesign},
+	}
+- Conference paper
+	@inproceedings{Abrahamsson37830,
+		booktitle = {Proceedings of the Third International Workshop on Quality of Future Internet Services},
+		institution = {Mälardalen University, School of Innovation, Design and Engineering},
+		series = {Lecture Notes in Computer Science},
+	}
+- Report 
+	@techreport{Ahmed369217,
+		institution = {Mälardalen University, School of Innovation, Design and Engineering},
+	}
+
+------

@@ -1,0 +1,46 @@
+.contact_table > tbody tr:nth-child(2n+1) {
+background-color: #fff;
+}
+
+.contact_table > tbody tr:nth-child(2n+1) td {
+border: none;
+}
+
+.contact_photo {
+width: 200px;
+text-align: center;
+display: block;
+margin-right: 50px;
+margin-bottom: 25px;
+}
+
+.contact_photo > .title{
+color: #CC6600;
+padding-top: 0;
+padding-bottom: 2px;
+font-size: 15px;
+}
+
+.contact_photo > .name {
+padding-top: 2px;
+padding-bottom: 0;
+font-size: 13px;
+}
+
+.contact_address_table {
+width: 750px;
+/*background-color: #CC6600;*/
+border: 0px solid white;
+}
+
+.contact_address_table > tbody > tr> td {
+border: 0px solid white;
+}
+}
+
+.contact_address_table > tbody tr:nth-child(2n+1) td{
+/*border-collapse:collapse;
+border-right: 1px dashed white;
+background-color: #CC6600;*/
+}
+

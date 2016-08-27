@@ -1,0 +1,45 @@
+* override/classes/Dispatcher.php and override/controllers/admin/AdminMetaController.php 
+keep the routes to 'item' pages.
+
+* backoffice > preferences > seo & urls keeps the routes to 'list' pages 
+(create <ControllerName>Controller.php in controllers/front first to get the controller 
+name in the combobox)
+
+* main, controller (override/controllers/front), template (theme/<theme-name>/):
+legend: lowercase means done (buy maybe not yet completely finished..).
+
+1. staff:
+LIST: staff.php, StaffController.php, staff.tpl 
+ITEM: person.php, PersonController.php, Person.tpl
+
+2. publications:
+LIST: publications-list.php, PublicationsListController.php, publications-list.tpl
+ITEM: publication.php, PublicationController.php, publication.tpl
+
+3. organization:
+LIST: organization.php, OrganizationController.php, organization.tpl
+ITEM: research-activity.php, ResearchActivityController.php, research-activity.tpl
+ITEM: division.php, DivisionController.php, division.tpl
+ITEM: research-group.php, ResearchGroupController.php, research-group.tpl
+
+4. projects:
+LIST: projects-list.php, ProjectsListController.php, projects-list.tpl
+ITEM: project.php, ProjectController.php, project.tpl
+
+5. news and events:
+LIST: news-and-events.php, NEWSANDEVENTSCONTROLLER.PHP, NEWS-AND-EVENTS.TPL
+ITEM: notice.php, NOTICECONTROLLER.PHP, NOTICE.TPL
+
+6. partners map:
+LIST: partner.php, PartnersController.php, partners.tpl
+
+7. open positions:
+LIST: open-positions-list.php, OPENPOSITIONSLISTCONTROLLER.PHP, OPEN-POSITIONS-LIST.TPL
+ITEM: open-position.php, OPENPOSITIONCONTROLLER.PHP, OPEN-POSITION.TPL
+
+7. courses:
+LIST: courses-list.php, COURSESLISTCONTROLLER.PHP, COURSES-LIST.TPL
+ITEM: course.php, COURSECONTROLLER.PHP, COURSE.TPL
+
+
+
